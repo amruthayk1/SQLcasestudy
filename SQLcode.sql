@@ -191,3 +191,5 @@ GROUP  BY b.sector
 ORDER  BY amount_raised DESC; 
 
 CREATE INDEX index_investment ON investment (funding_round_type);
+CREATE INDEX index_companies ON companies (category_list(200));
+DROP INDEX index_companies ON companies;
